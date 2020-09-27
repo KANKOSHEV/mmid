@@ -29,7 +29,7 @@ namespace Peb
 				printf("Module %ws has not been mapped.\n", module->BaseDllName.Buffer);
 			}
 
-			entry = module->InLoadOrderLinks.Flink; // next module in the linked list.
+			entry = module->InLoadOrderLinks.Flink; // next module in the list.
 		}
 
 		return FALSE;
