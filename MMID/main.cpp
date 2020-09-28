@@ -31,4 +31,8 @@ int main(int argc, char* argv[])
 	std::thread anti_injection(checkForInjection); // creates a new thread to continously scan modules.
 
 	std::getchar();
+	
+	anti_injection.detach();
+
+	return 0;
 }
